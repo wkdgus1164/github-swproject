@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>안녕하세요. 한장현입니다. 현재 날짜는!</p>
+    <p id="view-date"></p>
+</body>
+<script>
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let date = today.getDate();
+    document.getElementById('view-date').innerText = `${year}년 ${month}월  ${date}일입니다.`;
+</script>
+
+</html>
